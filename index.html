@@ -1,33 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <title>My BCIT Project</title>
-    <meta name="comp1800 template" content="My 1800 App">
+    <meta name="comp1800 template" content="My 1800 App" />
 
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Other libraries go here -->
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!------------------------------>
     <!-- Your HTML Layout go here -->
     <!------------------------------>
     <!-- Stuff for body goes here -->
-
-
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">
+          <img src="./images/mining_logo.png" height="60" />
+          Mining Solutions
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <div class="container col-xxl-8 px-4 py-4">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-2">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./images/hero.avif"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="500"
+            height="200"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            Mining Consultant Solutions by James
+          </h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, 
+            ducimus odio. Quisquam cupiditate eius accusamus sed facere iste.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+              Learn more
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              Contact us
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- cards -->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/exploration.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Mineral Exploration</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/engineering.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Civil and Structural Engineering</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/geology.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Geology and Resources</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- call to action -->
+    <div
+      class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"
+    >
+      <div class="col-md-6 p-lg-5 mx-auto my-3">
+        <h2 class="display-3 fw-bold">Designed for mining explorers</h2>
+        <h3 class="fw-normal text-muted mb-3">
+          Get expert services to support existing or prospective mining projects.
+        </h3>
+        <div class="d-flex gap-3 justify-content-center lead fw-normal">
+          <a class="icon-link" href="#">
+            Private
+            <svg class="bi" aria-hidden="true">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+          <a class="icon-link" href="#">
+            Government
+            <svg class="bi" aria-hidden="true">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div
+        class="product-device product-device-2 shadow-sm d-none d-md-block"
+      ></div>
+    </div>
+    <!-- footer -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2025 Mining Consultant Solutions by James, Inc</p>
+      </footer>
+    </div>
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
     <!---------------------------------------------->
 
     <!-- Link to scripts of your own -->
-    <!-- <script type="module" src="./src/main.js"></script> -->
-
-</body>
-
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
